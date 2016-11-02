@@ -1,0 +1,11 @@
+<div class="votes-counter">
+    <i class="glyphicon glyphicon-menu-up"
+        [class.up-vote]="isUserVoteUp()"
+        (click)="onUpVoteClick()">
+    </i>
+    <span class="vote-count">{{ votesCount + userVote }}</span>
+    <i class="glyphicon glyphicon-menu-down"
+        [class.down-vote]="isUserVoteDown()"
+        (click)="onDownVoteClick()">
+    </i>
+</div>
