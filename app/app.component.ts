@@ -4,12 +4,18 @@ import {AuthorsComponent} from './authors/authors.component';
 import {LikesComponent} from './likes/likes.component';
 import {VotesCounterComponent} from './votes-counter/votes-counter.component';
 import {TweetsListComponent} from './tweets-list/tweets-list.component';
+import {ZippyComponent} from './zippy/zippy.component';
 
 @Component({
     selector: 'my-app',
     template: `<h1>My First Angular 2 App</h1>
-        <tweets-list></tweets-list>
+        <zippy title="Breaking news">
+            Cras sit amet nibh libero, in gravida nulla.
+            Nulla vel metus scelerisque ante sollicitudin commodo.
+            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+        </zippy>
 
+        <tweets-list></tweets-list>
         <courses></courses>
         <authors></authors>
         <likes
@@ -23,6 +29,7 @@ import {TweetsListComponent} from './tweets-list/tweets-list.component';
         </votes-counter>
     `,
     directives: [
+        ZippyComponent,
         TweetsListComponent,
         CoursesComponent,
         AuthorsComponent,
