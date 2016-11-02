@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses/courses.component', './authors/authors.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses/courses.component', './authors/authors.component', './likes/likes.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses/courses.component', './authors/auth
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1;
+    var core_1, courses_component_1, authors_component_1, likes_component_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', './courses/courses.component', './authors/auth
             },
             function (authors_component_1_1) {
                 authors_component_1 = authors_component_1_1;
+            },
+            function (likes_component_1_1) {
+                likes_component_1 = likes_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -30,10 +33,11 @@ System.register(['angular2/core', './courses/courses.component', './authors/auth
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<h1>My First Angular 2 App</h1>\n        <courses></courses>\n        <authors></authors>\n    ",
+                        template: "<h1>My First Angular 2 App</h1>\n        <courses></courses>\n        <authors></authors>\n        <likes\n            [likes]=\"13\"\n            [liked]=\"true\">\n        </likes>\n    ",
                         directives: [
                             courses_component_1.CoursesComponent,
-                            authors_component_1.AuthorsComponent
+                            authors_component_1.AuthorsComponent,
+                            likes_component_1.LikesComponent
                         ]
                     }), 
                     __metadata('design:paramtypes', [])

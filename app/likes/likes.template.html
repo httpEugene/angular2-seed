@@ -1,0 +1,9 @@
+
+<div>
+    <i class="glyphicon glyphicon-heart"
+        [class.unlike-color]="!liked"
+        [class.like-color]="liked"
+        (click)="onClick()">
+    </i>
+    <span>{{ likes }}</span>
+</div>
