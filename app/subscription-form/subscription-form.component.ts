@@ -1,8 +1,10 @@
 import {Component} from 'angular2/core';
+import {RouterLink} from 'angular2/router';
 
 @Component({
     selector: 'subscription-form',
-    templateUrl: 'app/subscription-form/subscription-form.component.html'
+    templateUrl: 'app/subscription-form/subscription-form.component.html',
+    directives: [RouterLink]
 })
 export class SubscriptionFormComponent {
     frequencies = [

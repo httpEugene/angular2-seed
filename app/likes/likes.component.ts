@@ -1,4 +1,4 @@
-import {Component, Input, Output} from 'angular2/core';
+import {Component, OnInit, Input, Output} from 'angular2/core';
 
 @Component({
     selector: 'likes',
@@ -17,7 +17,7 @@ import {Component, Input, Output} from 'angular2/core';
         }
     `]
 })
-export class LikesComponent {
+export class LikesComponent implements OnInit {
     @Input() likes = 10;
     @Input() liked = false;
 
