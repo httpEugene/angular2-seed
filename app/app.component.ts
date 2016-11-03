@@ -5,10 +5,16 @@ import {LikesComponent} from './likes/likes.component';
 import {VotesCounterComponent} from './votes-counter/votes-counter.component';
 import {TweetsListComponent} from './tweets-list/tweets-list.component';
 import {ZippyComponent} from './zippy/zippy.component';
+import {SubscriptionFormComponent} from './subscription-form/subscription-form.component';
+import {ChangePasswordFormComponent} from './change-password-form/change-password-form.component';
 
 @Component({
     selector: 'my-app',
     template: `<h1>My First Angular 2 App</h1>
+        <change-password-form></change-password-form>
+
+        <subscription-form></subscription-form>
+
         <zippy title="Breaking news">
             Cras sit amet nibh libero, in gravida nulla.
             Nulla vel metus scelerisque ante sollicitudin commodo.
@@ -34,7 +40,9 @@ import {ZippyComponent} from './zippy/zippy.component';
         CoursesComponent,
         AuthorsComponent,
         LikesComponent,
-        VotesCounterComponent
+        VotesCounterComponent,
+        SubscriptionFormComponent,
+        ChangePasswordFormComponent
     ]
 })
 export class AppComponent {
