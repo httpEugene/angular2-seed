@@ -7,10 +7,12 @@ import {TweetsListComponent} from './tweets-list/tweets-list.component';
 import {ZippyComponent} from './zippy/zippy.component';
 import {SubscriptionFormComponent} from './subscription-form/subscription-form.component';
 import {ChangePasswordFormComponent} from './change-password-form/change-password-form.component';
+import {GitHubProfileComponent} from './github-profile/github-profile.component';
 
 @Component({
     selector: 'my-app',
     template: `<h1>My First Angular 2 App</h1>
+        <github-profile></github-profile>
         <change-password-form></change-password-form>
 
         <subscription-form></subscription-form>
@@ -42,7 +44,8 @@ import {ChangePasswordFormComponent} from './change-password-form/change-passwor
         LikesComponent,
         VotesCounterComponent,
         SubscriptionFormComponent,
-        ChangePasswordFormComponent
+        ChangePasswordFormComponent,
+        GitHubProfileComponent
     ]
 })
 export class AppComponent {
